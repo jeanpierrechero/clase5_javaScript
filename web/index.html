@@ -24,12 +24,44 @@ and open the template in the editor.
 	}
         </script>
         <script src="fuction.js"> </script> <!--creamos fuction.js y lo llamamos-->
+        <!--
         <script>
             coco = new Object();
             coco.nombre = "Nombre";
-            coco,apellido = "Peres";
+            coco.apellido = "Peres";
             show(coco);
         </script>
+        -->
+        <!--
+        <script>
+            function Persona(nombre,apellido,edad){
+                this.edad = edad;
+                this.nombre = nombre;
+                this.apellido = apellido;
+                this.getEdad = function(){
+                    return this.edad;
+                }
+            }
+            coco = new Persona("coco","peres",20);
+            show(coco);
+        </script>
+        -->
+        <!--usando json
+        <script>
+            coco = {nombre:"coco", apellido:"peres", edad:20,
+            getEdad:function(){
+                return this.edad}
+            }
+            show(coco);
+        </script>
+        -->
+        <!--otra forma de json-->
+        <script>
+            show({nombre:"coco", apellido:"peres", edad:20,
+            getEdad:function(){
+                return this.edad}});            
+        </script>
+        
     </head>
     
 <body>

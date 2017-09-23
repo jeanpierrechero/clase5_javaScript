@@ -6,5 +6,6 @@ function writeInput(txt) {
 function show(Persona) {
     nombre = Persona.nombre;
     apellido = Persona.apellido;
-    alert(nombre, apellido);
+    edad = Persona.getEdad();
+    alert(nombre+" "+apellido+" "+edad);
 }
